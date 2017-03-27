@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Mochi Mochi</title>
+		<link rel="stylesheet" href="assets/main.css" />
+		<script type="application/javascript" src="lib/bundle.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script type="application/javascript">
+			function draw() {
+			var canvas = document.getElementById('canvas');
+			if (canvas.getContext) {
+				var canvas = document.getElementById('canvas');
+				var context = canvas.getContext('2d');
+				var centerX = canvas.width / 2;
+				var centerY = canvas.height / 2;
+				var radius = 100;
+				var eyeRadius = 10;
+				var eyeXOffset = 25;
+				var eyeYOffset = 20;
+				
+				// draw the yellow circle
+				context.beginPath();
+				context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+				context.fillStyle = 'yellow';
+				context.fill();
+				context.lineWidth = 5;
+				context.strokeStyle = 'black';
+				context.stroke();
+					
+				// draw the eyes
+				context.beginPath();
+				var eyeX = centerX - eyeXOffset;
+				var eyeY = centerY - eyeXOffset;
+				context.arc(eyeX, eyeY, eyeRadius, 0, 2 * Math.PI, false);
+				var eyeX = centerX + eyeXOffset;
+				context.arc(eyeX, eyeY, eyeRadius, 0, 2 * Math.PI, false);
+				context.fillStyle = 'black';
+				context.fill();
+				
+				// draw the mouth
+				context.beginPath();
+				context.arc(centerX, centerY, 50, 0, Math.PI, false);
+				context.stroke();
+			}
+			}
+		</script>
+	</head>
+
+	<body onload="draw();">
+
+		<div class="canvas">
+			<canvas id="canvas" width="240" height="360"></canvas>
+		</div>
+
+		<h1>hello</h1>
+
+		
+	</body>
+	
+</html>
