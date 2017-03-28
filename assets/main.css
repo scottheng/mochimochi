@@ -16,6 +16,17 @@ span, article, footer, time, small {
   background: transparent;
 }
 
+body {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+.canvas {
+	align-self: center;
+}
+
 canvas {
 	border: 1px solid black;
 }
