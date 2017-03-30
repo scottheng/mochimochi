@@ -75,7 +75,7 @@ header {
 
 .sidebar {
 	width: 250px;
-	background: #ffbdbd;
+	background: #bae1ff;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -104,5 +104,6 @@ header {
 }
 
 canvas {
-	border: 1px solid black;
+	border: 1px solid #bae1ff;
+	
 }
