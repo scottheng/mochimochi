@@ -101,9 +101,13 @@ header {
 
 .canvas {
 	align-self: center;
+	border: 1px solid #bae1ff;
 }
 
-canvas {
-	border: 1px solid #bae1ff;
-	
+.fireworks {
+	align-self: center;
+	position: absolute;
 }
+
+
+

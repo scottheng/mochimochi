@@ -3,7 +3,7 @@
 		<title>Mochi Mochi</title>
 		<link rel="stylesheet" href="assets/main.css" />
 		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-		<script type="application/javascript" src="lib/bundle.js"></script>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 
@@ -29,7 +29,7 @@
 		<div class="main">
 			<div class="sidebar">
 				<ul class="game-controls">
-					<li>
+					<li class="start">
 						<h1>START</h1>
 					</li>
 					<li>
@@ -39,13 +39,17 @@
 			</div>
 			<div class="game-content">
 				<div class="canvas">
-					<canvas id="canvas" width="600" height="360"></canvas>
+					<canvas id="canvas" width="500" height="500"></canvas>
+				</div>
+
+				<div class="fireworks">
+					<canvas id="fireworks" width="500" height="500"></canvas>
 				</div>
 			</div>
 		</div>
 
 
-		
+		<script type="application/javascript" src="lib/bundle.js"></script>
 	</body>
 	
 </html>
