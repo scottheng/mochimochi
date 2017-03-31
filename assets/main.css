@@ -36,7 +36,9 @@ body {
 
 header {
 	height: 80px;
-	background: #c9c9ff;
+	/*background: #704782;*/
+	background: #2479AF;
+	/*border-bottom: 5px solid #004298;*/
 	display: flex;
 	justify-content: space-between;
 }
@@ -46,6 +48,7 @@ header {
 	color: white;
 	font-size: 36px;
 	font-weight: bolder;
+	letter-spacing: 2px;
 	margin-left: 40px;
 }
 
@@ -63,7 +66,7 @@ header {
 }
 
 .portfolio-links li :hover {
-	color: blue;
+	color: #bae1ff;
 }
 
 
@@ -75,7 +78,8 @@ header {
 
 .sidebar {
 	width: 250px;
-	background: #bae1ff;
+	background: #2479AF;
+	/*border-right: 5px solid #004298;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -87,7 +91,7 @@ header {
 }
 
 .game-controls li {
-	background: white;
+	background: #bae1ff;
 	padding: 10px;
 	margin-bottom: 10px;
 	border-radius: 10px;
@@ -101,13 +105,22 @@ header {
 
 .canvas {
 	align-self: center;
-	border: 1px solid #bae1ff;
+	border: 20px solid #bae1ff;
+	border-radius: 30px;
 }
 
 .fireworks {
 	align-self: center;
 	position: absolute;
 }
+
+.start {
+	display: flex;
+	justify-content: center;
+
+}
+
+
 
 
 
