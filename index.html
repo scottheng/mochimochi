@@ -13,6 +13,16 @@
 			<div class="logo">
 				<h2>Mochi Mochi</h2>
 			</div>
+			<ul class="game-controls">
+				<li class="score">
+					<h1>Your score:</h1>
+					<h1 id="score">0</h1>
+				</li>
+				<li class="time">
+					<h1>Time</h1>
+					<h1 id="time">30</h1>
+				</li>
+			</ul>
 			<div class="navigation">
 				<ul class="portfolio-links">
 					<li>
@@ -27,24 +37,7 @@
 		</header>
 
 		<div class="main">
-			<div class="sidebar">
-				<ul class="game-controls">
-					<li class="start">
-						<button>START</button>
-					</li>
-					<li>
-						<h1>HOW TO PLAY</h1>
-					</li>
-					<li>
-						<h1>Your score:</h1>
-						<h1 id="score">0</h1>
-					</li>
-					<li>
-						<h1>Time</h1>
-						<h1 id="time">30</h1>
-					</li>
-				</ul>
-			</div>
+
 			<div class="game-content">
 				<div class="canvas">
 					<canvas id="canvas" width="500" height="500"></canvas>
@@ -53,6 +46,11 @@
 				<div class="fireworks">
 					<canvas id="fireworks" width="500" height="500"></canvas>
 				</div>
+
+				<div class="start">
+					<button id="start">START</button>
+				</div>
+
 			</div>
 		</div>
 
