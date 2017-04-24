@@ -141,6 +141,27 @@ header {
 	background-color: #ffd8ba;
 }
 
+.rules {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.rules h1 {
+	font-size: 36px;
+	font-weight: bolder;
+	align-self: center;
+}
+
+.rules p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.how-to-gif {
+	align-self: center;
+}
+
 
 
 
